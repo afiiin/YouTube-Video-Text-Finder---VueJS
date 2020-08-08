@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-wrapper{
+    width: 90%;
+    height: 250px;
+    background: linear-gradient(90deg, #367cff, #28b8f8);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 2em;
+    position: relative;
+    text-align: center;
+}
+
+.top-wrapper p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 250px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    position: absolute;
+    bottom: -1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.url, .kataKunci{
+    height: 4.5em;
+    padding: 0 24px;
+    border: none;
+    color: #666;
+    filter: drop-shadow(0px 10px 30px rgba(30, 109, 255, 0.9));
+}
+
+.kataKunci{
+    padding-right: 5em;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.bersihkan{
+    position: absolute;
+    left: 29em;
+    height: 3em;
+    border-radius: 8px;
+    padding: 0 24px;
+    border: none;
+    background-color: #367CFF;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.result {
+    margin: 0 auto;
+    background: linear-gradient(90deg, #367cff, #28b8f8);
+    width: 90%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    margin-top: 4em;
+    position: relative; 
+    font-family:'Roboto', sans-serif;
+}
+
+.pagination{
+    position: absolute; 
+    top: 2em;
+    font-size: medium;
+}
+
+.btn {
+    padding: 8px 32px;
+    border: 3px solid #367CFF;
+    border-radius: 15px;
+}
+
+.result-box{
+    width: 55em;
+    height: 35em;
+    background-color: #fff;
+    box-shadow: 0px 25px 45px 5px rgba(54, 124, 255, 0.25);
+    margin-top: 100px;
+}
+
+.result-info{
+    margin-left: 18.2em;
+}
+
+.total, .halaman {
+    display: inline-block;
+    margin-top: 40px;
+    border: 1px solid #367CFF;
+    color: #666;
+    background-color: #fff;
+    top: 2em;
+    padding: 10px 48px 10px 10px;
+    text-align: center;
+}
+
+.result-list{
+    margin-left: 5em;
+    margin-top: 2.8em;
+    line-height: 2.5em;
+    color: #666;
+}
+
+.daftar a{
+    position: absolute;
+    right: 15em;
+    color: #367cff;
+}
