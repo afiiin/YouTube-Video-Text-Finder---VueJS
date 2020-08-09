@@ -1,15 +1,3 @@
-# YouTube-Video-Text-Finder---VueJS
-web yang digunakan untuk menemukan kata dalam Video Youtube
-
-<h2>Build With</h2>
-<ul>
-  <li><a href="html.com">HTML</a></li>
-  <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
-  <li><a href="vuejs.org">VueJS</a></li>
-</ul>
-
-Demo : <a href="https://awesome-vuejs.netlify.app/">Awesome-VueJS</a>
-
 <h1 align="center">
   Video Text Finder
   <br>
@@ -27,12 +15,9 @@ Demo : <a href="https://awesome-vuejs.netlify.app/">Awesome-VueJS</a>
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#demo">Demo</a> •
+  <a href="#license">License</a> •
 </p>
-
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
 ## Key Features
 
@@ -71,6 +56,10 @@ This software uses the following open source packages:
 
 - [Learn](https://github.com/amitmerchant1990/pomolectron) - CodeIgniter Form 
 - [Learn](https://github.com/amitmerchant1990/correo) - Form Design HTML & CSS
+
+## Demo
+
+[demo](https://awesome-vuejs.netlify.app)
 
 ## License
 
