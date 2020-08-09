@@ -29,36 +29,40 @@
 
       <div class="result">
         <div class="container">
-        <div class="pagination">
-          <button class="btn pertama" @click="navigasi('first')" :disabled="!paginasi['first']">
-            First
-          </button>
-          <button class="btn sebelumnya" @click="navigasi('prev')" :disabled="!paginasi['prev']">
-            Prev
-          </button>
-          <button class="btn selanjutnya" @click="navigasi('next')" :disabled="!paginasi['next']">
-            Next
-          </button>
-          <button class="btn terakhir" @click="navigasi('last')" :disabled="!paginasi['last']">
-            Last
-          </button>
+          <div class="pagination">
+            <button class="btn pertama" @click="navigasi('first')" :disabled="!paginasi['first']">
+              First
+            </button>
+            <button class="btn sebelumnya" @click="navigasi('prev')" :disabled="!paginasi['prev']">
+              Prev
+            </button>
+            <button class="btn selanjutnya" @click="navigasi('next')" :disabled="!paginasi['next']">
+              Next
+            </button>
+            <button class="btn terakhir" @click="navigasi('last')" :disabled="!paginasi['last']">
+              Last
+            </button>
         </div>
         
         <div class="result-box">
-         <div class="result-info">
-          <div class="total mb-5">Total Hasil: {{ paginasi.total }}</div>
-          <div class="halaman mb-5">Halaman ke: {{ paginasi.page }}</div>
-         </div>
-         <div class="result-list">
-          <ul class="daftar">
-            <li v-for="(hasil, i) in daftarHasil" :key="i" class="mb-3">
-              <span v-html="hasil.text"></span>
-              <a :href="`${url}&t=${hasil.start}s`" target="_blank">Youtube</a>
-            </li>
-          </ul>
-         </div>
+          <div class="container">
+            <div class="result-info">
+              <div class="total mb-5">Result: {{ paginasi.total }}</div>
+              <div class="halaman mb-5">Page: {{ paginasi.page }}</div>
+            </div>
+          </div>
+          <div class="container-result">
+            <div class="result-list">
+              <ul class="daftar">
+                <li v-for="(hasil, i) in daftarHasil" :key="i" class="mb-3">
+                  <span v-html="hasil.text"></span>
+                  <a :href="`${url}&t=${hasil.start}s`" target="_blank">Youtube</a>
+                </li>
+              </ul>
+            </div>
         </div>
-      </div>
+        </div>
+        </div>
       </div>     
       <!-- <div class="mb-5">
         <pre class="paginasi">{{ jadikanString(paginasi) }}</pre>
