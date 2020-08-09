@@ -1,5 +1,5 @@
 <h1 align="center">
-  Video Text Finder
+  YouTube Video Text Finder
   <br>
 </h1>
 
@@ -59,7 +59,7 @@ This software uses the following open source packages:
 
 ## Demo
 
-[demo](https://awesome-vuejs.netlify.app)
+[YouTube Video Text Finder](https://awesome-vuejs.netlify.app)
 
 ## License
 
