@@ -67,6 +67,6 @@ MIT
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/muhammadafin) &nbsp;&middot;&nbsp;
+> GitHub [@muhammadafin](https://github.com/muhammadafin) &nbsp;&middot;&nbsp;
 > Twitter [@Afin10](https://twitter.com/afin10)
 
