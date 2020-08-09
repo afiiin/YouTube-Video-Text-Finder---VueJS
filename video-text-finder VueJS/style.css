@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 75em;
+}
+
 .top-wrapper{
     width: 90%;
     height: 250px;
@@ -45,11 +49,25 @@
     filter: drop-shadow(0px 10px 30px rgba(30, 109, 255, 0.9));
 }
 
+.url{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* .url:focus{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+} */
+
 .kataKunci{
-    padding-right: 5em;
+    padding-right: 6em;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+/* .kataKunci:focus{
+
+} */
 
 .bersihkan{
     position: absolute;
@@ -78,7 +96,7 @@
 .pagination{
     position: absolute; 
     top: 2em;
-    font-size: medium;
+    font-weight: medium;
 }
 
 .btn {
@@ -87,38 +105,188 @@
     border-radius: 15px;
 }
 
+.pertama{
+    transition: 0.3;
+}
+
+.sebelumnya{
+    transition: 0.3;
+}
+
+.selanjutnya{
+    transition: 0.3;
+}
+
+.terakhir{
+    transition: 0.3;
+}
+
+.pertama:active{
+    background-color: #367CFF;
+    color: #fff;
+    border: 3px solid white;
+}
+
+.sebelumnya:active{
+    background-color: #367CFF;
+    color: #fff;
+    border: 3px solid white;
+}
+
+.selanjutnya:active{
+    background-color: #367CFF;
+    color: #fff;
+    border: 3px solid white;
+}
+
+.terakhir:active{
+    background-color: #367CFF;
+    color: #fff;
+    border: 3px solid white;
+}
+
 .result-box{
-    width: 55em;
+    width: 75%;
     height: 35em;
     background-color: #fff;
     box-shadow: 0px 25px 45px 5px rgba(54, 124, 255, 0.25);
     margin-top: 100px;
+    position: relative;
+}
+
+.container-result{
+    padding: 0 0 0 8%;
 }
 
 .result-info{
-    margin-left: 18.2em;
+    position: absolute;
+    top: 2em;
 }
 
 .total, .halaman {
     display: inline-block;
-    margin-top: 40px;
     border: 1px solid #367CFF;
     color: #666;
     background-color: #fff;
     top: 2em;
     padding: 10px 48px 10px 10px;
-    text-align: center;
 }
 
 .result-list{
-    margin-left: 5em;
+    width: 85%;
     margin-top: 2.8em;
+    margin: 0 auto;
     line-height: 2.5em;
     color: #666;
+    position: absolute;
+    top: 7.5em;
 }
 
-.daftar a{
+.result-list a{
     position: absolute;
-    right: 15em;
+    /* left: 44em; */
     color: #367cff;
+    transition: all 0.5s;
+    right: 0;
+    display: inline-block;
+}
+
+.result-list a:hover{
+    background-color: #367cff;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    
+} 
+
+@media (max-width: 720px){
+body{
+    height: 46em;
+}
+
+    .top-wrapper{
+        height: 180px;
+        top: -0.5em;
+
+    }
+
+    .top-wrapper p{
+        font-size: 20px;
+        line-height: 180px;
+    }
+
+    .search{
+        top: 89%;
+    }
+
+    .url, .kataKunci{
+        font-size: 12px;
+        width: 45%;
+        height: 3em;
+        padding: 0 8px;
+        filter: drop-shadow(0px 5px 15px rgba(30, 109, 255, 0.9));
+    }
+
+    .bersihkan {
+            font-size: 12px;
+            margin-top: 1%;
+            left: 75.05%;
+            height: 2.5em;
+            border-radius: 8px;
+            padding: 0 18px;
+    }
+
+    .result {
+        margin: 0 auto;
+        background: linear-gradient(90deg, #367cff, #28b8f8);
+        width: 90%;
+        height: 130px;
+        border-radius: 15px 15px 0 0;
+        margin-top: 2.5em;
+    }
+    
+    .pagination{
+        top: 22%;
+    }
+    
+    .btn {
+        font-weight: medium;
+        font-size: 10px;
+        padding: 6px 18px;
+        border: 1.5px solid #367CFF;
+        border-radius: 8px;
+    }
+
+    .result-box{
+        width: 75%;
+        height: 20em;
+        background-color: #fff;
+        box-shadow: 0px 25px 45px 5px rgba(54, 124, 255, 0.25);
+        margin-top: 80px;
+        position: relative;
+    }
+    
+    .container-result{
+        padding: 0 0 0 8%;
+    }
+    
+    .result-info{
+        position: absolute;
+        top: 2em;
+    }
+
+    .result-list {
+        margin-top: 6%;
+        font-size: 8px;
+    }
+    
+    .total, .halaman {
+        font-size: 11px;
+        color: #666;
+        background-color: #fff;
+        margin-top: -5%;
+        padding: 5px 32px 5px 10px;
+    }
+    
+    
 }
