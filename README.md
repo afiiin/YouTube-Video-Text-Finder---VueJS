@@ -21,7 +21,7 @@
 
 ## Key Features
 
-* Responsive on tablet/ipad or media max-width 720px
+* Responsive on media max-width 720px
 
 ## How To Use
 
